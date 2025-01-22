@@ -22,6 +22,10 @@ if Upload_File is not None:
     with col1:
         st.sidebar.subheader("Citizenship Count")
         st.sidebar.write(citizenship_count())
-        
+
+        with col2:
+            st.sidebar.subheader("Event Location Region")
+            st.sidebar.write(event_location_region())
+
 
     
