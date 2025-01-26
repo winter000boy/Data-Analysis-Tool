@@ -18,14 +18,23 @@ if Upload_File is not None:
     st.sidebar.write("No of Events : ",no_of_event)
 
 
-    col1,col2,col3,col4 = st.columns(4)
+    col1,col2,col3,col4 = st.sidebar.columns(4)
     with col1:
         st.sidebar.subheader("Citizenship Count")
         st.sidebar.write(citizenship_count())
 
-        with col2:
-            st.sidebar.subheader("Event Location Region")
-            st.sidebar.write(event_location_region())
+    with col2:
+        st.sidebar.subheader("Event Location Region")
+        st.sidebar.write(event_location_region())
+
+    with col3:
+        st.sidebar.subheader("Hostilities Count")
+        st.sidebar.write(hostilities_count)
+
+    with col4:
+        st.sidebar.subheader("Non Hostilities Count")
+        st.sidebar.write(noHostilitiesCount)
+
 
 
     
